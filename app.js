@@ -77,5 +77,12 @@ for(let i = 1; i <= 100; i++){
 } 
 console.log(bankAccount);
 
+// i've done this already
+
+
+// arrays contain values
+// they are not necesarrily stored in order
+// list of names
+
 
 
