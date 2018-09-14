@@ -30,34 +30,52 @@ const e = 'Kevin';
 // console.log(48 == '48');
 
 
-let animal = "monkey";
-if(animal === "cow"){
-    console.log('moooo')
-} else {
-    console.log('Hey! You\'re not a cow.')
-}
+// let animal = "monkey";
+// if(animal === "cow"){
+//     console.log('moooo')
+// } else {
+//     console.log('Hey! You\'re not a cow.')
+// }
 
-let personAge = 16;
-if(personAge >= 16){
-    console.log('Here are the keys')
-} else {
-    console.log('Sorry, you\'re too young.')
-}
+// let personAge = 16;
+// if(personAge >= 16){
+//     console.log('Here are the keys')
+// } else {
+//     console.log('Sorry, you\'re too young.')
+// }
 
-for( let i = 0; i <= 10; i++){
-    console.log(i);
-}
-for( let i = 10; i <= 400; i++){
-    console.log(i);
-}
-for( let i = 12; i < 4000; i++){
-    if(i%3 === 0){
-        console.log(i);
-    }
-}
+// for( let i = 0; i <= 10; i++){
+//     console.log(i);
+// }
+// for( let i = 10; i <= 400; i++){
+//     console.log(i);
+// }
+// for( let i = 12; i < 4000; i++){
+//     if(i%3 === 0){
+//         console.log(i);
+//     }
+// }
+// for( let i = 1; i <= 100; i++){
+//     if(i%2 === 0){
+//         console.log(`this number is even: ${i}`);
+//     }
+// }
+// for( let i = 0; i <= 100; i++){
+//     if(i%5 === 0){
+//         console.log(`i found a ${i}. High Five!`);
+//     } if(i%3 === 0){
+//         console.log(`i found a ${i}. Three is a crowd`);
+//     }    
+// };
 
-
-
+let bankAccount = 0;
+for(let i = 1; i <= 10; i++){
+    bankAccount+= i;
+}
+for(let i = 1; i <= 100; i++){
+    bankAccount+= 2*i;
+} 
+console.log(bankAccount);
 
 
 
