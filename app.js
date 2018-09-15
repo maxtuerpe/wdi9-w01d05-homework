@@ -215,4 +215,28 @@ const getMultipleLengths = (arr) => {
 }
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
+const maxOfThree = (num1, num2, num3) => {
+    let largest = num1;
+    if(num2 > largest){
+        largest = num2;
+    } if (num3 > largest){
+        largest = num3;
+    }
+    return largest;
+}
+console.log(maxOfThree(6, 9, 1));
+
+const printLongestWord = (arr) => {
+    let longestWord= '';
+    let charactercount = 0;
+    for( let i = 0; i < arr.length; i ++){
+        if (arr[i].length > charactercount){
+            longestWord = arr[i];
+            charactercount = arr[i].length;
+        }
+    }
+    return longestWord;
+}
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
 
