@@ -206,4 +206,13 @@ const getTwoLengths = (str1, str2) => {
     return arr;
 }
 
-console.log(getTwoLengths('hgfdsa', 'poiuytrewq'));
+const getMultipleLengths = (arr) => {
+    const numArr = [];
+    for(let i = 0; i < arr.length; i++){
+        numArr.push(arr[i].length);
+    }
+    return numArr;
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+
