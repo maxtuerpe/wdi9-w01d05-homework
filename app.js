@@ -199,47 +199,74 @@
 
 
 
-const getTwoLengths = (str1, str2) => {
-    const arr = [];
-    arr.push(str1.length);
-    arr.push(str2.length);
-    return arr;
-}
+// const getTwoLengths = (str1, str2) => {
+//     const arr = [];
+//     arr.push(str1.length);
+//     arr.push(str2.length);
+//     return arr;
+// }
 
-const getMultipleLengths = (arr) => {
-    const numArr = [];
-    for(let i = 0; i < arr.length; i++){
-        numArr.push(arr[i].length);
+// const getMultipleLengths = (arr) => {
+//     const numArr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         numArr.push(arr[i].length);
+//     }
+//     return numArr;
+// }
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+// const maxOfThree = (num1, num2, num3) => {
+//     let largest = num1;
+//     if(num2 > largest){
+//         largest = num2;
+//     } if (num3 > largest){
+//         largest = num3;
+//     }
+//     return largest;
+// }
+// console.log(maxOfThree(6, 9, 1));
+
+// const printLongestWord = (arr) => {
+//     let longestWord= '';
+//     let charactercount = 0;
+//     for( let i = 0; i < arr.length; i ++){
+//         if (arr[i].length > charactercount){
+//             longestWord = arr[i];
+//             charactercount = arr[i].length;
+//         }
+//     }
+//     return longestWord;
+// }
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+// const transmogrify = (a,b,c) => {
+//     return(Math.pow((a*b), c));
+// }
+// console.log(transmogrify(5, 3, 2));
+
+
+const reverseWordOrder = (str) => {
+    let word = '';
+    let arr = [];
+    let wordsReversed = ''
+    for(let i = 0; i < str.length; i++){
+        while(str[i] !== ' ' && i  < str.length){
+            word+=str[i];
+            i++;
+        } 
+        arr.push(word);
+        if(str[i] === ' '){
+            word = '';
+        } 
+        
     }
-    return numArr;
-}
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-
-const maxOfThree = (num1, num2, num3) => {
-    let largest = num1;
-    if(num2 > largest){
-        largest = num2;
-    } if (num3 > largest){
-        largest = num3;
+    for( let i = 0; i < arr.length; i++){
+        wordsReversed += (`${arr[arr.length - (i+1)]} `);
     }
-    return largest;
-}
-console.log(maxOfThree(6, 9, 1));
+    return wordsReversed;
 
-const printLongestWord = (arr) => {
-    let longestWord= '';
-    let charactercount = 0;
-    for( let i = 0; i < arr.length; i ++){
-        if (arr[i].length > charactercount){
-            longestWord = arr[i];
-            charactercount = arr[i].length;
-        }
-    }
-    return longestWord;
 }
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+console.log(reverseWordOrder("Ishmael me Call"));
+console.log(reverseWordOrder("I use Lâncome on my comb"));
 
-const transmogrify = (a,b,c) => {
-    return(Math.pow((a*b), c));
-}
-console.log(transmogrify(5, 3, 2));
+
