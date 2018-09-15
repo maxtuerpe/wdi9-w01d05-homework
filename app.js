@@ -239,4 +239,7 @@ const printLongestWord = (arr) => {
 }
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
-
+const transmogrify = (a,b,c) => {
+    return(Math.pow((a*b), c));
+}
+console.log(transmogrify(5, 3, 2));
