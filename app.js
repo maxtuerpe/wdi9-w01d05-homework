@@ -84,5 +84,17 @@ console.log(bankAccount);
 // they are not necesarrily stored in order
 // list of names
 
+const quotes = [
+    "Life is what happens when you’re busy making other plans.",
+    "My life is my message.",
+    "It is better to be hated for what you are than to be loved for what you are not."
+]
+
+const randomThings = [1, 10, "Hello", true]
+
+// the first element is accessed by randomThings[0].
+
+randomThings[2] = "world";
+console.log(randomThings[2]);
 
 
