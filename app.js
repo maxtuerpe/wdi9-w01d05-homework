@@ -245,28 +245,60 @@
 // console.log(transmogrify(5, 3, 2));
 
 
-const reverseWordOrder = (str) => {
-    let word = '';
-    let arr = [];
-    let wordsReversed = ''
-    for(let i = 0; i < str.length; i++){
-        while(str[i] !== ' ' && i  < str.length){
-            word+=str[i];
-            i++;
-        } 
-        arr.push(word);
-        if(str[i] === ' '){
-            word = '';
-        } 
-        
-    }
-    for( let i = 0; i < arr.length; i++){
-        wordsReversed += (`${arr[arr.length - (i+1)]} `);
-    }
-    return wordsReversed;
+// const reverseWordOrder = (str) => {
+//     let word = '';
+//     let arr = [];
+//     let wordsReversed = '';
+//     for(let i = 0; i < str.length; i++){
+//         while(str[i] !== ' ' && i  < str.length){
+//             word+=str[i];
+//             i++;
+//         } 
+//         arr.push(word);
+//         if(str[i] === ' '){
+//             word = '';
+//         }   
+//     }
+//     for( let i = 0; i < arr.length; i++){
+//         wordsReversed += (`${arr[arr.length - (i+1)]} `);
+//     }
+//     return wordsReversed;
+// }
+// console.log(reverseWordOrder("Ishmael me Call"));
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
 
+
+
+const randomIntegerOneAndTen = () => {
+    return Math.ceil(Math.random() * 10);
 }
-console.log(reverseWordOrder("Ishmael me Call"));
-console.log(reverseWordOrder("I use Lâncome on my comb"));
+
+const randomIntegerTenAndHundred = () => {
+    return Math.ceil(Math.random() * (90) + 10);
+}
+const random532And13267 = () => {
+    return  Math.random() * (12735) + 532;
+}
+
+const randomOneAndTen = () => {
+    return  Math.random() * (9) + 1;
+}
+const getRandomElement = (arr) => {
+    return  arr[Math.floor(Math.random() * arr.length)];
+}
+
+console.log(getRandomElement(['hi', 'my', 'name', 'is', 'max']));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
