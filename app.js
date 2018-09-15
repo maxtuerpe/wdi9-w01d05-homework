@@ -98,3 +98,25 @@ randomThings[2] = "world";
 console.log(randomThings[2]);
 
 
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+
+//ourCLass[2];
+
+ourClass[4] = "octocat";
+ourClass.push('Cloud City');
+
+
+
+const myArray = [5, 10, 500, 20]
+
+myArray.push('egon', 'chris');
+console.log(myArray);
+
+myArray.splice(0,1, 'Bob Marley');
+console.log(myArray);
+
+myArray.pop();
+myArray.reverse();
+
+console.log(myArray);
+
