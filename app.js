@@ -179,3 +179,20 @@ const kristynsCloset = [
 
   console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][2]} and  ${thomsCloset[2][1]}!`)
 
+thomsCloset[1][2]= "footie pajamas";
+
+const printCool = (name) => {
+    console.log(`${name} is cool`);
+}
+const calculateCube = (num) => {
+   console.log(Math.pow(num, 3));
+}
+calculateCube(5);
+
+const isVowel = (letter) => {
+    if (letter === 'a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U'){
+        return true;
+   }
+   return false;
+}
+console.log(isVowel('A'));
