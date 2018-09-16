@@ -269,25 +269,71 @@
 
 
 
-const randomIntegerOneAndTen = () => {
-    return Math.ceil(Math.random() * 10);
-}
+// const randomIntegerOneAndTen = () => {
+//     return Math.ceil(Math.random() * 10);
+// }
 
-const randomIntegerTenAndHundred = () => {
-    return Math.ceil(Math.random() * (90) + 10);
-}
-const random532And13267 = () => {
-    return  Math.random() * (12735) + 532;
-}
+// const randomIntegerTenAndHundred = () => {
+//     return Math.ceil(Math.random() * (90) + 10);
+// }
+// const random532And13267 = () => {
+//     return  Math.random() * (12735) + 532;
+// }
 
-const randomOneAndTen = () => {
-    return  Math.random() * (9) + 1;
-}
-const getRandomElement = (arr) => {
-    return  arr[Math.floor(Math.random() * arr.length)];
-}
+// const randomOneAndTen = () => {
+//     return  Math.random() * (9) + 1;
+// }
+// const getRandomElement = (arr) => {
+//     return  arr[Math.floor(Math.random() * arr.length)];
+// }
 
-console.log(getRandomElement(['hi', 'my', 'name', 'is', 'max']));
+// console.log(getRandomElement(['hi', 'my', 'name', 'is', 'max']));
+
+const user = {
+    name: 'Creede Elliot',
+    email: 'boring@gmail.com',
+    age: 19,
+    purchased: [],
+};
+user.email = 'creede@creede.creede';
+user.age++;
+user.location = "Denver";
+user.purchased.push('carbohydrates');
+user.purchased.push('peace of mind');
+user.purchased.push('Merino jodhpers');
+console.log(user.purchased[2]);
+
+user.friend = {
+    name: 'big boy',
+    email: 'imabigboyg@gmail.com',
+    age: 10,
+    purchased: [],
+    location: 'big land',
+};
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push('The One Ring');
+user.friend.purchased.push('A Latte');
+console.log(user.friend.purchased[1]);
+
+
+for ( let i = 0; i < user.purchased.length; i++){
+    console.log(user.purchased[i]);
+};
+for ( let i = 0; i < user.friend.purchased.length; i++){
+    console.log(user.friend.purchased[i]);
+};
+
+
+
+
+
+
+
+console.log(user);
+
+
 
 
 
